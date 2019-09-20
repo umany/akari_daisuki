@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>GetTimeline</servlet-name>
+		<servlet-class>GetTimelineServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTimeline</servlet-name>
+		<url-pattern>/gettimeline</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Tweet</servlet-name>
+		<servlet-class>TweetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Tweet</servlet-name>
+		<url-pattern>/tweet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckFlRm</servlet-name>
+		<servlet-class>CheckFlRmServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckFlRm</servlet-name>
+		<url-pattern>/checkflrm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Wehihi</servlet-name>
+		<servlet-class>WehihiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Wehihi</servlet-name>
+		<url-pattern>/wehihi</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MadHom</servlet-name>
+		<servlet-class>MadHomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MadHom</servlet-name>
+		<url-pattern>/madhom</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BirthdayReply</servlet-name>
+		<servlet-class>BirthdayReplyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BirthdayReply</servlet-name>
+		<url-pattern>/birthdayreply</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+</web-app>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+	<cron>
+		<url>/tweet</url>
+		<description>Tweet</description>
+		<schedule>every 20 minutes</schedule>
+	</cron>
+
+	<cron>
+		<url>/gettimeline</url>
+		<description>Get Timeline</description>
+		<schedule>every 2 minutes</schedule>
+	</cron>
+
+	<!-- <cron> <url>/ap2017rep</url> <description>why app engine not update
+		cron schedule</description> <schedule>every 1 minutes</schedule> </cron> -->
+
+	<cron>
+		<url>/birthdayreply</url>
+		<description>Check Follow / Remove</description>
+		<schedule>every 5 minutes</schedule>
+	</cron>
+
+	<cron>
+		<url>/checkflrm</url>
+		<description>Check Follow / Remove</description>
+		<schedule>every 5 minutes</schedule>
+	</cron>
+
+	<cron>
+		<url>/wehihi</url>
+		<description>wehi</description>
+		<schedule>every 1 hours</schedule>
+	</cron>
+
+	<cron>
+		<url>/madhom</url>
+		<description>shindan</description>
+		<timezone>Asia/Tokyo</timezone>
+		<schedule>every day 00:00</schedule>
+	</cron>
+</cronentries>
